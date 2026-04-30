@@ -48,7 +48,7 @@ nav.scrolled{background:rgba(13,14,17,.95);backdrop-filter:blur(18px);box-shadow
 
 /* ── HERO ── */
 .hero{position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden}
-.hero-bg{position:absolute;inset:0;background-image:url('https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=2000&q=85&fm=webp&fit=crop');background-size:cover;background-position:center;filter:saturate(.7) contrast(1.1)}
+.hero-bg{position:absolute;inset:0;background-image:url('photoofguyworkingoncar.jpg');background-size:cover;background-position:center;filter:saturate(.7) contrast(1.1)}
 .hero-overlay{position:absolute;inset:0;background:linear-gradient(105deg,rgba(13,14,17,.97) 0%,rgba(13,14,17,.88) 42%,rgba(13,14,17,.55) 72%,rgba(13,14,17,.3) 100%)}
 .hero-overlay2{position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,14,17,.2) 0%,transparent 40%,rgba(13,14,17,.95) 100%)}
 .hero-content{position:relative;z-index:10;max-width:1180px;margin:0 auto;padding:0 6%;padding-top:90px;width:100%}
@@ -68,6 +68,12 @@ nav.scrolled{background:rgba(13,14,17,.95);backdrop-filter:blur(18px);box-shadow
 .stat-num{font-family:'Oswald',sans-serif;font-size:1.8rem;font-weight:700;color:var(--text);line-height:1}
 .stat-label{font-size:.72rem;color:var(--dim);letter-spacing:.06em;text-transform:uppercase}
 .stat-accent{color:var(--red)}
+
+/* ── PROMO BANNER ── */
+.promo-banner{background:linear-gradient(135deg,var(--red) 0%,#b01010 100%);padding:1.1rem 6%;display:flex;align-items:center;justify-content:center;gap:1.2rem;flex-wrap:wrap;text-align:center}
+.promo-banner strong{font-family:'Oswald',sans-serif;font-size:1.05rem;font-weight:700;color:#fff;letter-spacing:.04em}
+.promo-banner span{font-size:.88rem;color:rgba(255,255,255,.88)}
+.promo-badge{background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.3);border-radius:6px;padding:.25rem .75rem;font-size:.75rem;font-weight:700;color:#fff;letter-spacing:.08em;text-transform:uppercase}
 
 /* ── SECTION COMMONS ── */
 section{padding:5.5rem 6%}
@@ -231,8 +237,8 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:2.5rem 6%
   <div class="hero-overlay2"></div>
   <div class="hero-content">
     <div class="hero-tag">Dunedin's Trusted Mechanics</div>
-    <h1>Your car deserves<br><em>expert hands.</em></h1>
-    <p class="hero-sub">99 Automobiles keeps Dunedin vehicles running right — WOFs, mechanical repairs, diagnostics, and full servicing done fast and done properly.</p>
+    <h1>Drive with<br><em>confidence.</em></h1>
+    <p class="hero-sub">Trust your vehicle with professionals. 99 Automobiles delivers expert WOFs, mechanical repairs, diagnostics, and full servicing — done right, every time.</p>
     <div class="hero-btns">
       <a href="#contact" class="btn-primary">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 010 1.18 2 2 0 012 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14z"/></svg>
@@ -240,6 +246,7 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:2.5rem 6%
       </a>
       <a href="#services" class="btn-ghost">View Services</a>
     </div>
+    <p style="font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;color:var(--dim);margin-bottom:2.4rem">Professional Service &bull; Trusted Quality &bull; Exceptional Care</p>
     <div class="hero-stats">
       <div class="stat">
         <span class="stat-num"><span class="stat-accent">4.9</span>★</span>
@@ -257,6 +264,14 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:2.5rem 6%
   </div>
 </section>
 
+<!-- PROMO BANNER -->
+<div class="promo-banner">
+  <span class="promo-badge">Limited Offer</span>
+  <strong>🎉 WOF Half Price — Save on your next inspection!</strong>
+  <span>Valid until 31 March 2026 · Book now to lock in your spot</span>
+  <a href="#contact" style="background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.35);color:#fff;padding:.45rem 1.2rem;border-radius:6px;font-size:.82rem;font-weight:600;text-decoration:none;transition:background .2s">Book Now →</a>
+</div>
+
 <!-- SERVICES -->
 <section class="services" id="services">
   <div class="section-inner">
@@ -268,33 +283,43 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:2.5rem 6%
     <div class="services-grid">
       <div class="svc-card reveal">
         <div class="svc-icon">🔍</div>
-        <div class="svc-title">Warrant of Fitness</div>
-        <p class="svc-desc">Fast, thorough WOF inspections to keep you legal and safe on the road. Same-day turnaround available.</p>
+        <div class="svc-title">WOF Inspections</div>
+        <p class="svc-desc">Fast, thorough Warrant of Fitness inspections to keep you legal and safe. Same-day turnaround available — currently half price.</p>
       </div>
       <div class="svc-card reveal">
         <div class="svc-icon">🔧</div>
-        <div class="svc-title">Mechanical Repairs</div>
-        <p class="svc-desc">Engine, gearbox, exhaust, steering — if it's broken, we fix it. Honest diagnostics, no unnecessary work.</p>
+        <div class="svc-title">Vehicle Servicing</div>
+        <p class="svc-desc">Full service checks, oil changes, filter replacements and tune-ups. Keep your vehicle running at its best.</p>
+      </div>
+      <div class="svc-card reveal">
+        <div class="svc-icon">⚙️</div>
+        <div class="svc-title">Transmission Services</div>
+        <p class="svc-desc">Automatic and manual gearbox servicing, fluid changes, and transmission repairs on all vehicle types.</p>
       </div>
       <div class="svc-card reveal">
         <div class="svc-icon">🛞</div>
-        <div class="svc-title">Brakes & Suspension</div>
-        <p class="svc-desc">Brake pads, discs, callipers, shocks and struts. Your safety is our priority — we won't cut corners.</p>
+        <div class="svc-title">Tyres</div>
+        <p class="svc-desc">Supply and fitting of new tyres, rotations, balancing, and alignment checks. All brands and sizes available.</p>
       </div>
       <div class="svc-card reveal">
-        <div class="svc-icon">🛢️</div>
-        <div class="svc-title">Oil & Servicing</div>
-        <p class="svc-desc">Regular servicing extends your vehicle's life. Oil changes, filter replacements, and full service checks.</p>
+        <div class="svc-icon">🔋</div>
+        <div class="svc-title">Hybrid Batteries</div>
+        <p class="svc-desc">Specialist hybrid battery testing, repair, and replacement. Keep your hybrid running efficiently and reliably.</p>
+      </div>
+      <div class="svc-card reveal">
+        <div class="svc-icon">🪛</div>
+        <div class="svc-title">Accessories Fitting</div>
+        <p class="svc-desc">Professional fitting of towbars, roof racks, bull bars, dashcams, sensors, and all vehicle accessories.</p>
       </div>
       <div class="svc-card reveal">
         <div class="svc-icon">💻</div>
-        <div class="svc-title">Engine Diagnostics</div>
-        <p class="svc-desc">Modern scan tools to read fault codes and identify issues fast. No guesswork — just accurate diagnosis.</p>
+        <div class="svc-title">Vehicle Diagnosis</div>
+        <p class="svc-desc">Modern scan tools to read fault codes and identify issues accurately. No guesswork — just fast, reliable diagnosis.</p>
       </div>
       <div class="svc-card reveal">
-        <div class="svc-icon">❄️</div>
-        <div class="svc-title">Cooling & Electrical</div>
-        <p class="svc-desc">Radiators, water pumps, batteries, alternators and wiring. Full electrical diagnostics on all makes and models.</p>
+        <div class="svc-icon">🔩</div>
+        <div class="svc-title">All Mechanical Repairs</div>
+        <p class="svc-desc">Engine, brakes, suspension, exhaust, steering — if it's broken, we fix it. Honest quotes, no unnecessary work.</p>
       </div>
     </div>
   </div>
@@ -310,10 +335,10 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:2.5rem 6%
       <h2>Professional, equipped,<br>and ready for anything.</h2>
     </div>
     <div class="gallery-grid reveal">
-      <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=1000&q=85&fm=webp&fit=crop" alt="Mechanic working under a car" class="wide">
-      <img src="https://images.unsplash.com/photo-1637091949370-00ad76a3a77c?w=600&q=80&fm=webp&fit=crop" alt="Engine bay close up">
-      <img src="https://images.unsplash.com/photo-1616702047516-f3bc47da38a5?w=1000&q=85&fm=webp&fit=crop" alt="Car on hoist in workshop">
-      <img src="https://images.unsplash.com/photo-1600880291901-b31dfae1e2ff?w=600&q=80&fm=webp&fit=crop" alt="Mechanic diagnostic tools">
+      <img src="enginework%20beingdone.jpg" alt="Engine work in progress at 99 Automobiles" class="wide">
+      <img src="oilchange.jpg" alt="Oil change service at 99 Automobiles">
+      <img src="moreenginework.jpg" alt="Mechanical repairs at 99 Automobiles workshop">
+      <img src="bonnetup.jpg" alt="Car with bonnet open — 99 Automobiles inspection">
     </div>
   </div>
 </section>
@@ -362,7 +387,7 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:2.5rem 6%
         </div>
       </div>
       <div class="why-img reveal">
-        <img src="https://images.unsplash.com/photo-1616702047516-f3bc47da38a5?w=900&q=85&fm=webp&fit=crop" alt="Professional mechanic at work">
+        <img src="redcarwithbonnetopen.jpg" alt="Red car with bonnet open — 99 Automobiles">
         <div class="why-img-badge">
           <div class="badge-icon">⭐</div>
           <div class="badge-text">
@@ -471,6 +496,7 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:2.5rem 6%
             <div>
               <div class="c-label">Phone</div>
               <div class="c-val"><a href="tel:0273907030">027 390 7030</a></div>
+              <div class="c-val" style="margin-top:.2rem"><a href="tel:0342258951">03 425 8951</a></div>
             </div>
           </div>
           <div class="contact-item">
@@ -519,12 +545,14 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:2.5rem 6%
               <label>Service Required</label>
               <select name="service" required>
                 <option value="" disabled selected>Select a service</option>
-                <option>Warrant of Fitness (WOF)</option>
+                <option>WOF Inspection</option>
+                <option>Vehicle Servicing</option>
+                <option>Transmission Service</option>
+                <option>Tyres</option>
+                <option>Hybrid Battery</option>
+                <option>Accessories Fitting</option>
+                <option>Vehicle Diagnosis</option>
                 <option>Mechanical Repair</option>
-                <option>Oil & Service</option>
-                <option>Brakes & Suspension</option>
-                <option>Engine Diagnostics</option>
-                <option>Cooling & Electrical</option>
                 <option>Other / Not Sure</option>
               </select>
             </div>
@@ -561,6 +589,7 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:2.5rem 6%
       <a href="#reviews">Reviews</a>
       <a href="#contact">Contact</a>
       <a href="tel:0273907030">027 390 7030</a>
+      <a href="tel:0342258951">03 425 8951</a>
     </div>
     <div class="footer-copy">© 2025 99 Automobiles Ltd · Dunedin, New Zealand · All rights reserved.</div>
   </div>
