@@ -30,7 +30,7 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);line-
 nav{position:fixed;top:0;inset-x:0;z-index:100;height:72px;display:flex;align-items:center;justify-content:space-between;padding:0 6%;transition:background .35s,box-shadow .35s}
 nav.scrolled{background:rgba(13,14,17,.95);backdrop-filter:blur(18px);box-shadow:0 1px 0 var(--border)}
 .nav-logo{display:flex;align-items:center;gap:.75rem;text-decoration:none}
-.nav-logo-badge{width:38px;height:38px;border-radius:9px;background:var(--red);display:flex;align-items:center;justify-content:center;font-family:'Oswald',sans-serif;font-size:13px;font-weight:700;color:#fff;letter-spacing:-.01em;flex-shrink:0}
+.nav-logo-badge{height:52px;width:auto;display:block;object-fit:contain;flex-shrink:0}
 .nav-logo-text{display:flex;flex-direction:column;gap:0}
 .nav-logo-name{font-family:'Oswald',sans-serif;font-size:16px;font-weight:600;color:var(--text);letter-spacing:.04em;line-height:1}
 .nav-logo-sub{font-size:10px;color:var(--dim);letter-spacing:.1em;text-transform:uppercase;line-height:1;margin-top:3px}
@@ -48,7 +48,7 @@ nav.scrolled{background:rgba(13,14,17,.95);backdrop-filter:blur(18px);box-shadow
 
 /* ── HERO ── */
 .hero{position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden}
-.hero-bg{position:absolute;inset:0;background-image:url('https://images.unsplash.com/photo-1530046339160-ce3e530c7d2f?w=2000&q=85&fm=webp&fit=crop');background-size:cover;background-position:center;filter:saturate(.7) contrast(1.1)}
+.hero-bg{position:absolute;inset:0;background-image:url('https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=2000&q=85&fm=webp&fit=crop');background-size:cover;background-position:center;filter:saturate(.7) contrast(1.1)}
 .hero-overlay{position:absolute;inset:0;background:linear-gradient(105deg,rgba(13,14,17,.97) 0%,rgba(13,14,17,.88) 42%,rgba(13,14,17,.55) 72%,rgba(13,14,17,.3) 100%)}
 .hero-overlay2{position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,14,17,.2) 0%,transparent 40%,rgba(13,14,17,.95) 100%)}
 .hero-content{position:relative;z-index:10;max-width:1180px;margin:0 auto;padding:0 6%;padding-top:90px;width:100%}
@@ -200,7 +200,7 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:2.5rem 6%
 <!-- NAV -->
 <nav id="nav">
   <a href="#" class="nav-logo">
-    <div class="nav-logo-badge">99</div>
+    <img src="new.logo.png" alt="99 Automobiles" class="nav-logo-badge">
     <div class="nav-logo-text">
       <span class="nav-logo-name">99 Automobiles</span>
       <span class="nav-logo-sub">Dunedin Auto Repair</span>
@@ -310,10 +310,10 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:2.5rem 6%
       <h2>Professional, equipped,<br>and ready for anything.</h2>
     </div>
     <div class="gallery-grid reveal">
-      <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=900&q=80&fm=webp&fit=crop" alt="Mechanic working on vehicle engine" class="wide">
-      <img src="https://images.unsplash.com/photo-1487754180451-c456f719a1fc?w=600&q=80&fm=webp&fit=crop" alt="Auto repair workshop tools">
-      <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=900&q=80&fm=webp&fit=crop" alt="Car in workshop bay">
-      <img src="https://images.unsplash.com/photo-1504222490345-c075b7ab94cd?w=600&q=80&fm=webp&fit=crop" alt="Mechanic using diagnostic equipment">
+      <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=1000&q=85&fm=webp&fit=crop" alt="Mechanic working under a car" class="wide">
+      <img src="https://images.unsplash.com/photo-1637091949370-00ad76a3a77c?w=600&q=80&fm=webp&fit=crop" alt="Engine bay close up">
+      <img src="https://images.unsplash.com/photo-1616702047516-f3bc47da38a5?w=1000&q=85&fm=webp&fit=crop" alt="Car on hoist in workshop">
+      <img src="https://images.unsplash.com/photo-1600880291901-b31dfae1e2ff?w=600&q=80&fm=webp&fit=crop" alt="Mechanic diagnostic tools">
     </div>
   </div>
 </section>
@@ -362,7 +362,7 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:2.5rem 6%
         </div>
       </div>
       <div class="why-img reveal">
-        <img src="https://images.unsplash.com/photo-1530046339160-ce3e530c7d2f?w=900&q=80&fm=webp&fit=crop" alt="Professional mechanic at work">
+        <img src="https://images.unsplash.com/photo-1616702047516-f3bc47da38a5?w=900&q=85&fm=webp&fit=crop" alt="Professional mechanic at work">
         <div class="why-img-badge">
           <div class="badge-icon">⭐</div>
           <div class="badge-text">
@@ -484,7 +484,7 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:2.5rem 6%
             <div class="c-icon">📍</div>
             <div>
               <div class="c-label">Location</div>
-              <div class="c-val">Dunedin, New Zealand</div>
+              <div class="c-val">808 Princes Street, Dunedin</div>
             </div>
           </div>
         </div>
@@ -550,7 +550,7 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:2.5rem 6%
 <footer>
   <div class="footer-inner">
     <a href="#" class="footer-brand nav-logo">
-      <div class="nav-logo-badge">99</div>
+      <img src="new.logo.png" alt="99 Automobiles" class="nav-logo-badge">
       <div class="nav-logo-text">
         <span class="nav-logo-name">99 Automobiles</span>
         <span class="nav-logo-sub">Dunedin Auto Repair</span>
